@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonOptions Component Debe de hacer mach con el snapshot 1`] = `
+<div class="options-container mt-5 mb-4">
+  <ul>
+    <li><button type="button" class="btn btn-primary">bulbasaur</button></li>
+    <li><button type="button" class="btn btn-primary">ivysaur</button></li>
+    <li><button type="button" class="btn btn-primary">venusaur</button></li>
+    <li><button type="button" class="btn btn-primary">charmander</button></li>
+  </ul>
+</div>
+`;

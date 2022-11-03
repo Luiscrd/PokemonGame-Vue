@@ -1,19 +1,16 @@
 <template>
     <div class="options-container mt-5 mb-4">
         <ul>
-            <button
-            v-for="pokemon in pokemons"
-            :key="pokemon.id"
-            type="button"
-            class="btn btn-primary"
-            @click="$emit('selection', pokemon.id)"
-            >{{ pokemon.name }}</button>
+            <li v-for="pokemon in pokemons" :key="pokemon.id">
+                <button type="button" class="btn btn-primary"
+                    @click="$emit('selection', pokemon.id)">{{ pokemon.name }}</button>
+            </li>
         </ul>
     </div>
 </template>
   
 <script>
-  export default {
+export default {
     props: {
 
         pokemons: {
@@ -22,7 +19,7 @@
         }
 
     }
-  }
+}
 </script>
   
 <style scoped>
@@ -31,24 +28,17 @@ ul {
     margin-left: 0;
     padding-left: 0;
 }
-li {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    margin-bottom: 10px;
-    width: 250px;
-}
-
-li:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
 
 .btn:hover {
     color: white;
     background-color: #13191c;
     border-color: #13191c;
 }
+
+li{
+    width: 200px;
+}
+
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #263238;
@@ -56,7 +46,7 @@ li:hover {
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #263238;
     --bs-btn-hover-border-color: #263238;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #263238;
     --bs-btn-active-border-color: #263238;
@@ -73,4 +63,4 @@ li:hover {
     display: flex;
     justify-content: center;
 }
-  </style>
+</style>

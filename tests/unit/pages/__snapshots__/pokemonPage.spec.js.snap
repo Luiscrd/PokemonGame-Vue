@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonOptions Component Debe de hacer mach con el snapshot cuando se cargan los Pokémons 1`] = `
+<div class="titulo">
+  <h1>¿Quién es este Pokémon?</h1>
+</div>
+<div class="container mt-5 text-center">
+  <div class="pokemon-container mt-3"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" class="hidden-pokemon" alt="pokemon">
+    <!--v-if-->
+  </div>
+  <div class="options-container mt-5 mb-4">
+    <ul>
+      <li><button type="button" class="btn btn-primary">bulbasaur</button></li>
+      <li><button type="button" class="btn btn-primary">ivysaur</button></li>
+      <li><button type="button" class="btn btn-primary">venusaur</button></li>
+      <li><button type="button" class="btn btn-primary">charmander</button></li>
+    </ul>
+  </div>
+  <!--v-if-->
+</div>
+`;
