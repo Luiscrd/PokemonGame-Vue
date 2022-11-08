@@ -3,6 +3,7 @@
 </p>
 
 # pokemon-game
+Ver: [Ir a la web](https://tiny-sopapillas-cd1a11.netlify.app/).
 
 ## Project setup
 ```
